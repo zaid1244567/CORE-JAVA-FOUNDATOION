@@ -76,3 +76,19 @@ public class NonStaticAccessAll {
 }
 
 **Note:** if the main method is in different class then we should use classname.variablename and classname.methodname for static variable and method
+
+what is **System.out.println();**
+
+class Test
+{
+    static String s = "welcome";
+}
+
+Test.s.length();
+
+class System
+{
+    static PrintStream out;
+}
+
+System.out.println();
