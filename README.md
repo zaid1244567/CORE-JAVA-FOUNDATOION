@@ -98,3 +98,27 @@ class System // System is a pre-define class in java
 }
 
 System.out.println();
+
+**what is public static void main(String args[])**
+
+JVM is responsible for executing main method
+
+**public:** means accessible everywhere
+
+**static:** its a keyword which will be common accross all objects
+
+**void:** its a return type
+
+**main():** method name
+
+**String args[]:** its an array
+
+public static void main(String args[]) - valid and its an actual main method and jvm looks for actual main method to execute the programm
+
+static public void main(String args[]) - in-valid
+
+public void static main(String args[]) - in-valid
+
+void main(String args[]) public static - invalid
+
+public static void main(int a[]) - valid but its not an actual main method
