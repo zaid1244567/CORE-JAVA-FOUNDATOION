@@ -17,6 +17,7 @@ STATIC KEYWORD
 }
 
 **2. Static methods can access non-static stuff through object.**
+
 public class StaticAccessNonStatic {
     
     int a=10;
