@@ -5,9 +5,11 @@ STATIC KEYWORD:
 Static keyword can only be applied for variables and methods
 
 a1) static variable
+
 a2) static method
 
 b1) non-static variable
+
 b2) non-static method
 
 **1. Static methods can access static stuff directly (without object).**
