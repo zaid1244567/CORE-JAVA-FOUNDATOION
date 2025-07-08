@@ -79,16 +79,22 @@ public class NonStaticAccessAll {
 
 **what is System.out.println();**
 
-class Test
+class Test // Test is a user define class
+
 {
+
     static String s = "welcome"; // here String is a class
+    
 }
 
 Test.s.length();
 
-class System
+class System // System is a pre-define class in java
+
 {
+
     static PrintStream out; // Here PrintStream is a class like String
+    
 }
 
 System.out.println();
