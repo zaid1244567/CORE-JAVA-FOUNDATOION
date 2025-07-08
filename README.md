@@ -75,4 +75,4 @@ public class NonStaticAccessAll {
     }
 }
 
-**Note:** if the main method is in different calss then we should use classname.varibale name and classname.methodname for static variable and method
+**Note:** if the main method is in different class then we should use classname.variablename and classname.methodname for static variable and method
