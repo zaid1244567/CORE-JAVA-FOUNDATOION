@@ -74,3 +74,5 @@ public class NonStaticAccessAll {
         obj.m1();
     }
 }
+
+**Note:** if the main method is in different calss then we should use classname.varibale name and classname.methodname for static variable and method
