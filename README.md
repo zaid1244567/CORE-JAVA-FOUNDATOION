@@ -2,7 +2,8 @@
 
 STATIC KEYWORD
 **1. Static methods can access static stuff directly (without object).**
-   EXAMPLE: public class StaticAccessStatic {
+
+public class StaticAccessStatic {
     
     static int a = 10;
 
@@ -34,6 +35,7 @@ public class StaticAccessNonStatic {
 }
 
 **3. Non-static methods can access everything directly.**
+
 public class NonStaticAccessAll {
     
     static int a = 30;
