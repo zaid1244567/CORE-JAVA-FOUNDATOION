@@ -41,16 +41,16 @@ public class NonStaticAccessAll {
     void m1() {
         System.out.println(a);
         System.out.println(b);
-        m1();
         m2();
+        m3();
     }
 
-    static void m1()
+    static void m2()
     {
         System.out.println("This is m1 method");
     }
 
-    void m2()
+    void m3()
     {
         System.out.println("This is m2 method");
     }
