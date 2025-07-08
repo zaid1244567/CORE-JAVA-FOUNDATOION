@@ -12,7 +12,7 @@ public class StaticAccessStatic {
     }
 
     public static void main(String[] args) {
-        staticMethod(); 
+        m1(); 
         System.out.println(a);
     }
 }
@@ -23,13 +23,13 @@ public class StaticAccessNonStatic {
     
     int a=10;
 
-    void staticMethod() {
+    void m1() {
         System.out.println("Hello");
     }
 
     public static void main(String[] args) {
         StaticAccessNonStatic s = new StaticAccessNonStatic();
-        s.staticMethod();
+        s.m1();
         System.out.println(s.a);
     }
 }
