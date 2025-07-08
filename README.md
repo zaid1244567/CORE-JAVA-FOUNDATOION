@@ -1,6 +1,9 @@
 # CORE-JAVA-FOUNDATOION
 
-STATIC KEYWORD
+STATIC KEYWORD:
+
+Static keyword can only be applied for variables and methods
+
 **1. Static methods can access static stuff directly (without object).**
 
 public class StaticAccessStatic {
