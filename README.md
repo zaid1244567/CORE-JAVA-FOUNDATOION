@@ -127,9 +127,10 @@ public static void main(int a[]) - valid but its not an actual main method
 
 Acquiring all the variables and methods from one class to another class
 
-**Advatage**
+**Advantage**
 
 i) Re-usability
+
 ii) Avoid duplication
 
 **Inheritance Types**
