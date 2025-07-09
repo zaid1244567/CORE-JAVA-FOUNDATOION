@@ -122,3 +122,70 @@ public void static main(String args[]) - in-valid
 void main(String args[]) public static - invalid
 
 public static void main(int a[]) - valid but its not an actual main method
+
+**========================Inheritance=============================**
+
+Acquiring all the variables and methods from one class to another class
+
+**Advatage**
+
+i) Re-usability
+ii) Avoid duplication
+
+**Inheritance Types**
+
+**1) Single Inheritance**
+
+**Note** one java file can have only one class as public, we can create object only in the main method and we can't create one method inside another method
+
+class A 
+
+{
+
+    int a = 10;
+
+    void display()
+
+    {
+
+        System.out.println(a);
+
+    }
+
+}
+
+class B extends A
+
+{
+
+    int b = 10;
+
+    void show()
+
+    {
+
+        System.out.println(b);
+
+    }
+
+}
+
+public class Inheritance
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        B bobj = new B();
+        System.out.println(bobj.a);
+        System.out.println(bobj.b);
+        bobj.display();
+        bobj.show();
+    }
+
+}
+
+
+
