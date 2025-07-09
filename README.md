@@ -325,7 +325,7 @@ public class HierarchicalInheritance
 
 Reason1: extends keyword support only one class not two classes
 
-Reason2: it creates ambiguity while extending when two class have same method...even though if we have two different methods still it creates ambiguity becuase whenever we create class it extends variables and methods from anroot class also know Object.
+Reason2: it creates ambiguity while extending when two class have same method...even though if we have two different methods still it creates ambiguity becuase whenever we create class it extends variables and methods from a root class also known as Object class. If we don't create any method inside class still class will have some methods which is extended from root class known as object class.
 
 
 
