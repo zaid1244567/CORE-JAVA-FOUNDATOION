@@ -319,4 +319,4 @@ public class HierarchicalInheritance
 
 }
 
-
+Note: Multiple inheritance is not supported using class concept we can acheive it using interface in java
