@@ -313,7 +313,7 @@ public class HierarchicalInheritance
 
         c2.display(30);
         
-        c2.print(400);
+        c2.print(40);
         
     }
 
