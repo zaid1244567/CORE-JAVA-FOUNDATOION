@@ -319,4 +319,15 @@ public class HierarchicalInheritance
 
 }
 
-Note: Multiple inheritance is not supported using class concept we can acheive it using interface in java
+**Note:** Multiple inheritance is not supported using class concept we can acheive it using interface in java
+
+**Why multiple inheritance is not supported in class in java ?**
+
+Reason1: extends keyword support only one class not two classes
+
+Reason2: it creates ambiguity while extending when two class have same method...even though if we have two different methods still it creates ambiguity becuase whenever we create class it extends variables and methods from anroot class also know Object.
+
+
+
+
+
