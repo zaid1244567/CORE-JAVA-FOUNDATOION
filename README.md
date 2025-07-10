@@ -766,4 +766,27 @@ Data abstraction is a process of hiding implementation details and showing only 
 
             }                     **||**        }
 
--> 
+-> Variables are final ans static by default in interface
+
+-> Interface contains abstract methods (Also allowed default and static methods from java8 onwards)
+
+-> Abstract method contains only signature but not body or implementation
+
+Example :
+
+            class Test                **||**        Interface Test
+
+            {                         **||**        {
+
+                void main()           **||**            void main();
+                
+                {                     **||**        }
+                
+                    implementation    **||**            
+
+                }                     **||**            
+
+            }                         **||**      
+
+->
+
