@@ -517,3 +517,35 @@ class Main
     }
     
 }
+
+**============final keyword=======================**
+
+final keyword can be apllied to class, variables and methods
+
+example 1: For variable
+
+class Test
+
+{
+
+    final int x = 100;
+
+}
+
+public class FinalKeyword
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        Test t = new Test();
+        
+        t.x = 200; //In-correct because we can't change value of final variable it is constant
+        
+        System.out.println(t.x);
+
+    }
+
+}
