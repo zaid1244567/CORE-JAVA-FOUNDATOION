@@ -652,6 +652,8 @@ public class FinalKeyword
 
 4) super keyword is not applicable for multiple inheritance
 
+5) super keyword doesn't interface it supports only for class
+
 **Example:** super keyword for variable
 
 class Animal
