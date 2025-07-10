@@ -742,4 +742,28 @@ class SuperKeyword
 
 }
         
-    
+**===========Data Abstraction=================**   
+
+Data abstraction is a process of hiding implementation details and showing only functionality to the user
+
+1) Abstract class
+
+2) Interface
+
+**Interface:**
+
+-> An interface is a blue print of a class
+
+    Example :
+
+            class Test            **||**        Interface Test
+
+            {                     **||**        {
+
+                variables         **||**            variables
+
+                methods           **||**            methods
+
+            }                     **||**        }
+
+-> 
