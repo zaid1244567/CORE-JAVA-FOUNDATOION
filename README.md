@@ -327,7 +327,72 @@ Reason1: extends keyword support only one class not two classes
 
 Reason2: it creates ambiguity while extending when two class have same method...even though if we have two different methods still it creates ambiguity becuase whenever we create class it extends variables and methods from a root class also known as Object class. If we don't create any method inside class still class will have some methods which is extended from root class known as object class.
 
+**============method overriding================**
 
+1) have same method in child class which is there in parent class but there will be change in implementation of child class method is known as method overriding
 
+2) without inheritance overriding is not possible
 
+3) there should be minimum one child class to override the method
+
+example: 
+
+class Bank
+
+{
+
+    double roi()
+
+    {
+        return 0;
+
+    }
+
+}
+
+class ICICI extends Bank
+
+{
+
+    double roi()
+
+    {
+        return 10.0;
+
+    }
+
+}
+
+class SBI extends Bank
+
+{
+
+    double roi()
+
+    {
+        return 11.0;
+
+    }
+
+}
+
+class OverridingDemo
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        ICICI i = new ICICI();
+        
+        System.out.println(i.roi());
+    
+        SBI s = new SBI();
+        
+        System.out.println(s.roi());
+
+    }
+
+}
 
