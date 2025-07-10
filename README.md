@@ -331,7 +331,7 @@ Reason2: it creates ambiguity while extending when two class have same method...
 
 1) having same method name in child class which is there in parent class but there will be change in implementation of child class method is known as method overriding
 
-2) without inheritance overriding is not possible and method overriding is a concept of inheritance
+2) without inheritance overriding is not possible and method overriding is a concept of inheritance and overloading is a concept of polymorphism
 
 3) there should be minimum one child class to override the method
 
@@ -396,3 +396,124 @@ class OverridingDemo
 
 }
 
+4) we can achieve both overloading and overriding using inheritance
+
+5) we can achieve overloading with or without inheritance
+
+6) But overriding can be achieved only through inheritance
+
+Example:
+
+class ABC
+
+{
+
+    void m1(int a)
+    
+    {
+
+        System.out.println(a);
+
+    }
+
+    void m2(int b)
+    
+    {
+
+        System.out.println(b);
+
+    }
+
+}
+
+class XYZ extends ABC
+
+{
+
+        void m1(int a) 
+    
+        {
+
+            System.out.println(a*a); // Overriding
+
+        }
+
+        void m2(int a,int b)
+    
+        {
+
+            System.out.println(a+b); // Overloading
+
+        }
+
+}
+
+class OverloadingVsOverriding
+
+{
+
+    public static void main()
+
+    {
+
+        XYZ xyzObj = new XYZ();
+        
+        xyzObj.m1(10);
+        
+        xyzObj.m2(20);
+        
+        xyzObj.m2(10,20);
+
+    }
+
+}
+
+7) if there are same methods in two different classes and there is no connection between them then we can't say that as overloadng 
+         
+Example:
+
+class A
+
+{
+
+    int show(int a)
+    
+    {
+    
+        return a;
+        
+    }
+    
+}
+
+class B
+
+{
+
+    int show(int a,int b)
+    
+    {
+    
+        return a+b;
+        
+    }
+    
+}
+
+class Main 
+{
+
+    public static void main(String[] args)
+    {
+    
+        A a = new A();
+        
+        System.out.println(a.show(10));
+        
+        B b = new B();
+        
+        System.out.println(b.show(20,30));
+        
+    }
+    
+}
