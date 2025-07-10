@@ -778,7 +778,7 @@ Example :
 
             {                         **||**        {
 
-                void main()           **||**            void main();
+                void main()           **||**            void main(); // abstract method
                 
                 {                     **||**        }
                 
@@ -788,5 +788,31 @@ Example :
 
             }                         **||**      
 
-->
+-> Methods in interface are public where as in class it is default and no need to write default keyword and if you write also not a problem
+
+-> Interface supports multiple inheritance
+
+-> We define interface with inerface keyword
+
+Example :
+
+            class Test            **||**        Interface Test
+
+            {                     **||**        {
+
+                variables         **||**            variables
+
+                methods           **||**            methods
+
+            }                     **||**        }
+
+-> A class extends another class, An interface extends another interface but class implements interface for the purpose of abstract menthods
+
+-> In interface we can't create object but we can create reference variable(means we can create object of class and hold that object into reference variable of type class or into reference variable of type interface)
+
+**Why we create abstract methods because it doesn't have any implementation inside it and what is the use of creating it then?**
+
+We create it because initially developer won't be knowing how to develop they will just know what to develop so they will just create abstract methods without any implementation once they get to know how to develop then they start implementing using class...this is the reason we create abstract method in interface without implementation inside it.
+
+
 
