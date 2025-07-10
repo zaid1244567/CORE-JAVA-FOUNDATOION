@@ -329,9 +329,9 @@ Reason2: it creates ambiguity while extending when two class have same method...
 
 **============method overriding================**
 
-1) have same method in child class which is there in parent class but there will be change in implementation of child class method is known as method overriding
+1) having same method name in child class which is there in parent class but there will be change in implementation of child class method is known as method overriding
 
-2) without inheritance overriding is not possible
+2) without inheritance overriding is not possible and method overriding is a concept of inheritance
 
 3) there should be minimum one child class to override the method
 
