@@ -522,7 +522,7 @@ class Main
 
 final keyword can be applied to class, variables and methods
 
-example 1: For variable
+**example 1:** For variable
 
 class Test
 
@@ -549,3 +549,195 @@ public class FinalKeyword
     }
 
 }
+
+**example 2:** For method
+
+class Test1
+
+{
+
+    final void m()
+
+    {
+
+        System.out.println("This is method from Test1...");
+
+    }
+
+}
+
+class Test2 extends Test1
+
+{
+
+    void m() //In-correct, we can't override this method because it's final
+
+    {
+
+        System.out.println("This is method from Test2...");
+
+    }
+
+}
+
+public class FinalKeyword
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        Test2 t2 = new Test2();
+        
+        t2.m();
+
+    }
+
+}
+
+**example 3:** For class
+
+final class Test1
+
+{
+
+    void m()
+
+    {
+
+        System.out.println("This is method from Test1...");
+
+    }
+
+}
+
+class Test2 extends Test1 //In-correct, we can't extend Test1 class because it's final
+
+{
+
+    void m() 
+
+    {
+
+        System.out.println("This is method from Test2...");
+
+    }
+
+}
+
+public class FinalKeyword
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        Test2 t2 = new Test2();
+        
+        t2.m();
+
+    }
+
+}
+
+**=============super keyword=================**
+
+1) Here we will be creating an object of child class and if we want to accessing method or variables of parent class then we need to use super keyword
+
+2) super keyword will be used to invoke the immediate parent class variable
+
+3) super keyword will be used to invoke the immediate parent class method
+
+4) super keyword is not applicable for multiple inheritance
+
+**Example:** super keyword for variable
+
+class Animal
+
+{
+
+    String color = "white";
+
+}
+
+class Dog extends Animal
+
+{
+
+    String color = "black";
+
+    void DisplayColor()
+
+    {
+
+        System.out.println(super.color);
+
+    }
+
+}
+
+class SuperKeyword
+
+{
+
+    public static void main(String args[])
+    
+    {
+    
+        Dog d = new Dog();
+    
+        d.DisplayColor();
+    
+    }
+
+}
+
+**Example:** super keyword for method
+
+class Animal
+
+{
+
+    void eat()
+
+    {
+
+        System.out.println("eating...");
+
+    }
+
+}
+
+class Dog extends Animal
+
+{
+
+    void eat()
+
+    {
+
+        super.eat();
+
+    }
+
+}
+
+class SuperKeyword
+
+{
+
+    public static void main(String args[])
+    
+    {
+    
+        Dog d = new Dog();
+    
+        d.eat();
+    
+    }
+
+}
+        
+    
