@@ -520,7 +520,7 @@ class Main
 
 **============final keyword=======================**
 
-final keyword can be apllied to class, variables and methods
+final keyword can be applied to class, variables and methods
 
 example 1: For variable
 
