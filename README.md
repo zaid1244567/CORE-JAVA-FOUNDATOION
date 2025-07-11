@@ -810,6 +810,92 @@ Example :
 
 -> In interface we can't create object but we can create reference variable(means we can create object of class and hold that object into reference variable of type class or into reference variable of type interface)
 
+-> whenever we are implementing abstract method in class then we have to make that method as public explicitly becuase the scope of abstract method in interface is public so we can't de-scope it.
+
+Example: 
+
+interface Shape
+
+{
+    int Lenght=10;   // final & Static
+    
+    int width=20;    // final static
+
+    void circle();   // abstract method
+
+    default void square()
+    
+    {
+    
+        System.out.println(" this is square - default method");
+        
+    }
+
+    static void rectangle()
+    
+    {
+    
+        System.out.println("this is rectangle - static method");
+        
+    }
+    
+}
+
+public class Interfacedemo implements Shape
+
+{
+
+    public void circle()
+
+    {
+
+    System.out.println("this is cirecle - abstract method..");
+    
+    }
+
+    void triangle()
+
+    {
+
+        System.out.print("this is triangle...");
+
+    }
+
+    public static void main(String[] args) 
+    {
+
+        Interfacedemo idobj = new Interfacedemo();
+
+        // Scenario 1
+        
+        idobj.circle();
+        
+        idobj.square();
+        
+        shape.rectangle(); // this method is static and it's coming from interface to class so we need to use interface name.method name if it was created in class then we can use class name.variable name
+
+        idobj.triangle();
+
+        // Scenario 2
+
+        Shape sh = new Interfacedemo();
+
+        sh.circle();
+        
+        sh.square();
+        
+        shape.rectangle(); // static method can directly access from interface
+
+        sh.triangle(); // we can't access this method because it's a reference variable of interface ann in which there is no triangle method even though we have created an object for a class and same goes for 
+        
+        variables also
+
+        System.out.println(shape.length * shape.width); // accessing static variables directly
+        
+    }
+
+}
+
 **Why we create abstract methods because it doesn't have any implementation inside it and what is the use of creating it then?**
 
 We create it because initially developer won't be knowing how to develop they will just know what to develop so they will just create abstract methods without any implementation once they get to know how to develop then they start implementing using class...this is the reason we create abstract method in interface without implementation inside it.
