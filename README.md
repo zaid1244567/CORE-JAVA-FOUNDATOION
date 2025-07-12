@@ -900,5 +900,150 @@ public class Interfacedemo implements Shape
 
 We create it because initially developer won't be knowing how to develop they will just know what to develop so they will just create abstract methods without any implementation once they get to know how to develop then they start implementing using class...this is the reason we create abstract method in interface without implementation inside it.
 
+**=============multiple inheritance using interface=============**
 
+Example: 
 
+package day16;
+
+public interface I1 
+
+{
+
+    int x = 100;
+    
+    void m1(); // abstract method
+    
+}
+
+package day16;
+
+public interface I2 
+
+{
+
+    int y = 200;
+    
+    void m2(); // abstract method
+    
+}
+
+package day16;
+
+public class C1 implements I1, I2 
+
+{
+
+    public void m1() 
+    
+    {
+    
+        System.out.println(x);
+        
+    }
+
+    public void m2() 
+    
+    {
+    
+        System.out.println(y);
+        
+    }
+
+    public static void main(String[] args) 
+    
+    {
+    
+        C1 obj = new C1();
+        
+        obj.m1();
+        
+        obj.m2();
+        
+    }
+    
+}
+
+**Example of multiple inheritance for combination of extends and implements**
+
+Always extends come first then implements
+
+package day16;
+
+public interface I1 
+
+{
+
+    int x = 100;
+    
+    void m1(); // abstract method
+    
+}
+
+package day16;
+
+public interface I2 
+
+{
+
+    int y = 200;
+    
+    void m2(); // abstract method
+    
+}
+
+package day16;
+
+public class C2 
+
+{
+
+    int z = 300;
+    
+    void m3()
+    
+    {
+    
+        System.out.println(z);
+        
+    }
+    
+}
+
+package day16;
+
+public class C1 extends C2 implements I1, I2 
+
+{
+
+    public void m1() 
+    
+    {
+    
+        System.out.println(x);
+        
+    }
+
+    public void m2() 
+    
+    {
+    
+        System.out.println(y);
+        
+    }
+
+    public static void main(String[] args) 
+    
+    {
+    
+        C1 c1obj = new C1();
+        
+        c1obj.m1();
+        
+        c1obj.m2();
+        
+        c1obj.m3();
+        
+    }
+    
+}
