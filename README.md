@@ -964,7 +964,7 @@ public class C1 implements I1, I2
     
 }
 
-**Example of multiple inheritance for combination of extends and implements**
+**Example of multiple inheritance for combination of extends and implements also it can be considered as an example for hybrid inheritance which is a combination of hierarchical and multiple inheritance**
 
 Always extends come first then implements
 
@@ -1045,5 +1045,63 @@ public class C1 extends C2 implements I1, I2
         c1obj.m3();
         
     }
+    
+}
+
+**================Abstract class and interface difference==================**
+
+**Abstract class**
+
+-> abstract class can have abstract and non abstract methods
+
+-> abstract class doesn't support multiple inheritance
+
+-> abstract class can have final, non final, static and non static variables
+
+-> Abstract class can provide the implementation of interface
+
+-> Abstract keyword is used to declare abstract class
+
+-> Abstract class can extends another java class and implement multiple java interfaces
+
+-> Abstract class can be extended using extends keyword
+
+-> Abstract class can have class members like private, protected, public and default
+
+Example: 
+
+public abstract class shape
+
+{
+
+    public abstract void draw();
+
+}
+
+**Interface**
+
+-> Interface can have only abstract methods. Since Java 8, it can have default and static methods also.
+
+-> Interface supports multiple inheritance.
+
+-> Interface has only static and final variables.
+
+-> Interface can't provide the implementation of abstract class.
+
+-> The interface keyword is used to declare interface.
+
+-> An interface can extend another Java interface only.
+
+-> An interface can be implemented using keyword "implements".
+
+-> Members of a Java interface are public by default.
+
+Example:
+
+public interface Drawable 
+
+{
+
+    void draw();
     
 }
